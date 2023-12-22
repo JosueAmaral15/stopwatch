@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-size:62.5%;
+    --cronometer-dimension: 20rem;
+    --cronometer-border-radius: 50%;
+    --cronometer-background: #666;
+    --cronometer-cover-background: mintcream;
+    --cronometer-color: #000;
+    --cronometer-screen-dimension:calc(var(--cronometer-dimension)/2)
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cover{
+    width: calc(var(--cronometer-dimension)*0.9);
+    height: calc(var(--cronometer-dimension)*0.9);
+    border-radius:var(--cronometer-border-radius);
+    background-color: var(--cronometer-cover-background);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    color: var(--cronometer-color);
+    padding:2rem;
+}
+
+.stopwatch{
+    width: var(--cronometer-dimension);
+    height: var(--cronometer-dimension);
+    border-radius:var(--cronometer-border-radius);
+    background-color: var(--cronometer-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 2rem;
+    box-shadow: 0 0 4rem rgba(0,0,0,.5);
+    color: var(--cronometer-color);
+
+}
+
+/*.cronometro span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #000;
+}*/
+
+.default-button{
+    width: calc(var(--cronometer-dimension)/3.5);
+    height: calc(var(--cronometer-dimension)/6.5);
+    border-radius: .5rem;
+    color: darkslategray;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: calc(var(--cronometer-dimension)/2.5);
+    overflow:hidden;
+    display:inline-block;
+    text-decoration:overline;
+    text-align:center;
+}
+
+.screen{
+    width: var(--cronometer-screen-dimension);
+    height: calc(var(--cronometer-screen-dimension)/2);
+    border-radius: 1rem;
+    border: 2px solid gray;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 1rem;
+    color : #444;
+    font-size: calc(var(--cronometer-screen-dimension)/4);
+}
+
+.chronoList{
+    font-weight : bold;
+    font-variant: small-caps;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #444;
+    text-shadow: 4px 4px 2px gray;
+    border : 3px dashed gray; 
+    border-radius: 1rem;
+    margin : 3rem auto;
+    width: var(--cronometer-dimension);
+}
+
+.chronoList td {
+    padding: 1rem;
+    margin : 0;
+    border-bottom: 1px solid gray;
+}
+
+.chronoList td:nth-child(2){
+    text-align: right;
+}
+
+.second-part{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
