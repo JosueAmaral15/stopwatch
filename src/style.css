@@ -111,3 +111,10 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+.creator{
+    font-family:'Alex Brush';
+    color: #444;
+    text-shadow: 4px 4px 2px gray;
+    margin-block:2rem;
+}

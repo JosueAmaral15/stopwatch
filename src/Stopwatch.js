@@ -84,6 +84,7 @@ function reset(){
             </div>
             <ChronoList seconds={chronoList}/>
             <Button behavior={reset}>reset</Button>
+            <p className="creator">Created by <a href="https://www.github.com/josueamaral15">Josué Amaral</a></p>
         </div>
         
     );
